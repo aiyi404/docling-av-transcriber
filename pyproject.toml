@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docling-av-transcriber"
+version = "0.1.0"
+description = "Aliyun Bailian powered audio/video to DoclingDocument transcriber"
+readme = "README.md"
+authors = [{name = "Docling Team"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+dependencies = [
+    "docling-core>=0.2.0",
+    "pydantic>=2.7",
+    "requests>=2.32",
+    "ffmpeg-python>=0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2",
+    "responses>=0.25",
+    "ruff>=0.5",
+]
+
+[tool.setuptools.packages.find]
+include = ["docling_av_transcriber"]
+
+[tool.ruff]
+line-length = 100

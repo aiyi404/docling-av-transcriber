@@ -1,0 +1,6 @@
+.serena
+.claude
+/out
+__pycache__/
+**/__pycache__/
+docling_av_transcriber.egg-info/
